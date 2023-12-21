@@ -14,6 +14,13 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     const totalsExpensesSum = footStringToFloat + rentStringToFloat + clothesToFloat;
     console.log(totalsExpensesSum);
 
+    const setTotalExpenses = document.getElementById("expenses-show");
+   setTotalExpenses.innerText=totalsExpensesSum;
 
+   const calculateRemingBalance=incomeStringToFloat-totalsExpensesSum;
+   const setremaingBalance=document.getElementById("balance");
+   setremaingBalance.innerText=calculateRemingBalance;
+
+  
 
 })
